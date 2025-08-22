@@ -71,3 +71,124 @@ h6 {
     background-color: #000958;
     color: #fff;
 }
+
+/* header bottom */
+.header__bottom {
+    display: flex;
+    margin-top: 100px;
+}
+
+.header__bottom-media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header__media {
+    display: flex;
+}
+
+.header__media-pet1 {
+    width: 388px;
+    height: 488px;
+    background-color: #fe997b;
+    border: 3px solid #fff;
+    border-radius: 16px;
+}
+
+.header__media-pet1 img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+}
+
+.header__media-pet1--deco1 {
+    position: absolute;
+    top: 16px;
+    right: -40px;
+    z-index: -1;
+}
+
+.header__media-pet1--deco2 {
+    position: absolute;
+    top: 247px;
+    left: -58px;
+    z-index: -1;
+}
+
+.header__media-pet2 {
+    position: absolute;
+    bottom: -58px;
+    right: -163px;
+    width: 186px;
+    height: 244px;
+    background-color: #faa7ad;
+    border: 2px solid #fde0e2;
+    border-radius: 16px;
+}
+
+.header__media-pet2 img {
+    align-self: flex-end;
+    border-radius: 16px;
+}
+
+.header__media-card {
+    position: absolute;
+    left: 129px;
+    bottom: -94px;
+    width: 250px;
+    height: 156px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header__media-card-top,
+.header__media-card-bottom {
+    display: flex;
+    padding: 18px 14px;
+}
+
+.header__media-card--separate {
+    width: 222px;
+    height: 2px;
+    margin: 0 14px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.header__media-card-top img,
+.header__media-card-bottom img {
+    width: 40px;
+    height: 40px;
+    background-color: #fec23f;
+    border-radius: 10px;
+}
+
+.header__media-card-bottom img {
+    background-color: #bfddf5;
+}
+
+.header__media-card--info {
+    margin-left: 8.6px;
+}
+
+.header__media-card--info p {
+    font-family: "Sora", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #181e52;
+}
+
+.header__media-card--progress1,
+.header__media-card--progress2 {
+    margin-top: 7px;
+    width: 118px;
+    height: 4px;
+    background-color: #ebecf2;
+    border-radius: 10px;
+}
+
+.header__media-card--progress2 {
+    width: 39px;
+}

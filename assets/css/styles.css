@@ -1,5 +1,6 @@
 :root {
     --primary-color: #ff5d31;
+    --second-background-color: #fff6ed;
     --heading-color: #000958;
     --desc-color: #656689;
     --subtitle-color: #5e6085;
@@ -600,7 +601,7 @@ ul {
 .service {
     margin-top: 130px;
     padding: 68px 0 100px;
-    background-color: #fff6ed;
+    background-color: var(--second-background-color);
 }
 
 .service__top--subtitle {
@@ -824,4 +825,165 @@ ul {
 .staff__btn:hover {
     opacity: 0.6;
     box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+/* Price */
+.price {
+    padding: 86px 0;
+    background-color: var(--second-background-color);
+}
+
+.pricing__container {
+    width: 994px;
+}
+
+.price__top {
+    text-align: center;
+}
+
+.price__top--heading {
+}
+
+.price__top--desc {
+    width: 709px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing__switch--wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.pricing__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border-radius: 99px;
+    border: 1px solid #ff5b2e99;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-label::before {
+    content: "";
+    position: absolute;
+    width: 141px;
+    height: 100%;
+    background: var(--btn-color);
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+}
+
+.pricing__switch-value {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-family: var(--poppins-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    width: 131px;
+    left: auto;
+    right: 0;
+}
+
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(1) {
+    color: var(--btn-color);
+}
+
+.pricing__switch--inner {
+    position: relative;
+}
+
+.pricing__sale-off {
+    position: absolute;
+    top: -10px;
+    right: -112px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    margin-top: 56px;
+}
+
+.pricing__item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing__level {
+    color: #ff5b2e;
+    font-family: var(--poppins-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.pricing__pack-name {
+    margin-top: 8px;
+    color: #3f4065;
+    font-family: var(--sora-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.price__cost {
+    margin-top: 24px;
+    color: #000958;
+    font-family: var(--sora-font);
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.pricing__btn {
+    min-width: 246px;
+    height: 44px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    margin-top: 22px;
+    background: #fff;
+    color: var(--btn-color);
+    transition: 0.2s;
+}
+
+.pricing__btn:hover {
+    cursor: pointer;
+    background: var(--btn-color);
+    color: #fff;
+}
+
+.pricing__service-list {
+    margin-top: 24px;
+}
+
+.pricing__service-item {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.pricing__service-item::before {
+    content: url(../icon/price-check.svg);
+    margin-right: 12px;
+}
+
+.pricing__service-item + .pricing__service-item {
+    margin-top: 18px;
 }

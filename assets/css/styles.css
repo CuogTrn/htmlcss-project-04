@@ -666,6 +666,11 @@ ul {
     font-size: 1.2rem;
     font-weight: 400;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+.service__item--more:hover {
+    color: var(--primary-color);
 }
 
 .service__item--more-icon {
@@ -705,7 +710,6 @@ ul {
 
 .service__cta {
     min-width: 214px;
-    opacity: 0.6;
     cursor: pointer;
 }
 
@@ -827,8 +831,9 @@ ul {
 }
 
 .staff__btn:hover {
-    opacity: 0.6;
     box-shadow: 0 13px 26px -8px rgba(255, 91, 46, 0.42);
+    background-color: var(--btn-color);
+    color: #fff;
 }
 
 /* Price */
@@ -1089,6 +1094,7 @@ ul {
     height: 8px;
     border-radius: 99px;
     border: 1px solid #ff5b2e;
+    cursor: pointer;
 }
 
 .review__dot + .review__dot {
@@ -1304,6 +1310,10 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+}
+
+.footer-column:nth-child(4) .footer-column__item {
+    text-decoration: none;
 }
 
 .footer-column__item:hover {
